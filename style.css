@@ -12,63 +12,75 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(192,223,236);
-}
 
-.container {
-  position: relative;
-  margin: auto;
-  display: block;
-  width: 484px;
-  height: 484px;
-  margin-top: 10%
 }
 
 
 .clockbase {
     width: 300px;
     height: 300px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: solid rgb(216,236,223) 25px;
     background-color: rgb(252, 255, 243);
     position: relative;
-    top: 24px;
-    left: 18px;
+    display: block;
     
 }
 
 .hours {
-    position: absolute;
-    width: 8px;
-    height: 50px;
-    background-color: rgb(169,211,247);
-    top: 123.5px;
-    left: 162px;
-    transform-origin: center bottom
+  display: block;
+  width: 10px;
+  height: auto;
+  position: absolute;
+  bottom: 50%;
+  left: calc(50% - 5px);
+  transform-origin: center bottom;
 }
 .minutes {
-    position: absolute;
-    width: 5px;
-    height: 80px;
-    background-color: rgb(169,211,247);
-    top: 95px;
-    left: 164.2px;
-    transform-origin: center bottom
+  display: block;
+  width: 10px;
+  height: auto;
+  position: absolute;
+  bottom: 50%;
+  left: calc(50% - 5px);
+  transform-origin: center bottom;
+  z-index: 1;
 }
 .seconds {
-    position: absolute;
-    width: 3px;
-    height: 110px;
-    background-color: rgb(169,211,247);
-    top: 64px;
-    left: 164.5px;
-    transform-origin: center bottom
+  display: block;
+  width: 10px;
+  height: auto;
+  position: absolute;
+  bottom: 50%;
+  left: calc(50% - 5px);
+  transform-origin: center bottom;
+  z-index: 2;
 }
 .center {
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    background-color: rgb(169,211,247);
+  position: absolute;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.637);
     position: absolute;
-    top: 168px;
-    left: 160px;
+    bottom: calc(50% - 8px);
+    left: calc(50% - 8px);
+    z-index: 3;
+}
+.box {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  position: relative;
+}
+.inner-box {
+  display: block;
+  width: 10px;
+  height: 150px;
+  background-color: rgb(226, 43, 144);
+  position: absolute;
+  bottom: 50%;
+  left: calc(50% - 5px);
 }
