@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+}
+
+html * {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(192,223,236);
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 484px;
+  height: 484px;
+  margin-top: 10%
+}
+
+
+.clockbase {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: solid rgb(216,236,223) 25px;
+    background-color: rgb(252, 255, 243);
+    position: relative;
+    top: 24px;
+    left: 18px;
+    
+}
+
+.hours {
+    position: absolute;
+    width: 8px;
+    height: 50px;
+    background-color: rgb(169,211,247);
+    top: 123.5px;
+    left: 162px;
+    transform-origin: center bottom
+}
+.minutes {
+    position: absolute;
+    width: 5px;
+    height: 80px;
+    background-color: rgb(169,211,247);
+    top: 95px;
+    left: 164.2px;
+    transform-origin: center bottom
+}
+.seconds {
+    position: absolute;
+    width: 3px;
+    height: 110px;
+    background-color: rgb(169,211,247);
+    top: 64px;
+    left: 164.5px;
+    transform-origin: center bottom
+}
+.center {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: rgb(169,211,247);
+    position: absolute;
+    top: 168px;
+    left: 160px;
+}
