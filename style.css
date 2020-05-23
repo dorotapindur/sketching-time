@@ -8,36 +8,44 @@ html {
 
 body {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: top;
-  background-color: rgb(192,223,236);
+  background-color: rgb(161, 138, 103);
   margin: 0;
+  background-image: url("brown-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: #000000;
+  font-family: 'Fredericka the Great', cursive;
 }
 
 .main {
-  background-color: rgba(85, 85, 85, 0.466);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: calc(100vh - 50px);
-  padding: 15vh 15px;
+  height: 100vh;
+  background-color: rgba(245, 245, 245, 0.514);
+  margin: auto;
 }
+
 .header {
-  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 40px;
+  margin: 0;
 }
 
 .clockbase {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: solid rgb(216,236,223) 25px;
-    background-color: rgb(252, 255, 243);
+    border: solid black 2px;
+    background-color: #ffffff00;
     position: relative;
     display: block;
-    flex-shrink: 0;   
+    flex-shrink: 0; 
+    margin: 50px 20px;  
 }
+
+
 
 .hours {
   display: block;
@@ -81,12 +89,11 @@ body {
     z-index: 3;
 }
 .date {
-  margin-top: 0;
+  font-size: 32px;
 }
 
 .footer {
   text-align: center;
-  position: fixed;
   bottom: 0;
   font-size: 12px;
 }
