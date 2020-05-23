@@ -13,6 +13,7 @@ body {
   background-image: url("brown-background.jpg");
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   color: #000000;
   font-family: 'Fredericka the Great', cursive;
 }
@@ -20,17 +21,20 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  background-color: rgba(245, 245, 245, 0.514);
+  width: 350px;
+  min-height: 100vh;
+  
   margin: auto;
+  position: relative;
 }
 
 .header {
   font-weight: normal;
   font-size: 40px;
-  margin: 0;
+  margin: 20px;
+  text-align: center;
 }
 
 .clockbase {
@@ -39,148 +43,195 @@ body {
     border-radius: 50%;
     border: solid black 2px;
     background-color: #ffffff00;
+    background-image: url("");
     position: relative;
     display: block;
     flex-shrink: 0; 
-    margin: 50px 20px;  
+    margin: 20px;  
 }
-.num {
-  display: block;
-  width: 50px;
-  height: 300px;
-	position: absolute;
-  top: 0;
-  left: 125px;
-	text-align: center;
-	font-size: 2rem;
-	font-weight: normal;
-  padding: 5px;
-}
-.num1{
-	transform: rotate(30deg);
-}
-.num1 div{
-	transform: rotate(-30deg);
-}
-
-.num2{
-	transform: rotate(60deg);
-}
-.num2 div{
-	transform: rotate(-60deg);
-}
-
-.num3{
-	transform: rotate(90deg);
-}
-.num3 div{
-	transform: rotate(-90deg);
-}
-
-.num4{
-	transform: rotate(120deg);
-}
-.num4 div{
-	transform: rotate(-120deg);
-}
-
-.num5{
-	transform: rotate(150deg);
-}
-.num5 div{
-	transform: rotate(-150deg);
-}
-
-.num6{
-	transform: rotate(180deg);
-}
-.num6 div{
-	transform: rotate(-180deg);
-}
-
-.num7{
-	transform: rotate(210deg);
-}
-.num7 div{
-	transform: rotate(-210deg);
-}
-
-.num8{
-	transform: rotate(240deg);
-}
-.num8 div{
-	transform: rotate(-240deg);
-}
-
-.num9{
-	transform: rotate(270deg);
-}
-.num9 div{
-	transform: rotate(-270deg);
-}
-
-.num10{
-	transform: rotate(300deg);
-}
-.num10 div{
-	transform: rotate(-300deg);
-}
-
-.num11{
-	transform: rotate(330deg);
-}
-.num11 div{
-	transform: rotate(-330deg);
-}
-
-
-.hours {
-  display: block;
-  width: 10px;
-  height: auto;
-  position: absolute;
-  bottom: 50%;
-  left: calc(50% - 5px);
-  transform-origin: center bottom;
-}
-.minutes {
-  display: block;
-  width: 10px;
-  height: auto;
-  position: absolute;
-  bottom: 50%;
-  left: calc(50% - 5px);
-  transform-origin: center bottom;
-  z-index: 1;
-}
-.seconds {
-  display: block;
-  width: 10px;
-  height: auto;
-  position: absolute;
-  bottom: 50%;
-  left: calc(50% - 5px);
-  transform-origin: center bottom;
-  z-index: 2;
-}
-.center {
-  position: absolute;
-
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.637);
+  .num {
+    display: block;
+    width: 50px;
+    height: 300px;
     position: absolute;
-    bottom: calc(50% - 8px);
-    left: calc(50% - 8px);
-    z-index: 3;
+    top: 0;
+    left: 125px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 5px;
+  }
+  .num1{
+    transform: rotate(30deg);
+  }
+  .num1 div{
+    transform: rotate(-30deg);
+  }
+
+  .num2{
+    transform: rotate(60deg);
+  }
+  .num2 div{
+    transform: rotate(-60deg);
+  }
+
+  .num3{
+    transform: rotate(90deg);
+  }
+  .num3 div{
+    transform: rotate(-90deg);
+  }
+
+  .num4{
+    transform: rotate(120deg);
+  }
+  .num4 div{
+    transform: rotate(-120deg);
+  }
+
+  .num5{
+    transform: rotate(150deg);
+  }
+  .num5 div{
+    transform: rotate(-150deg);
+  }
+
+  .num6{
+    transform: rotate(180deg);
+  }
+  .num6 div{
+    transform: rotate(-180deg);
+  }
+
+  .num7{
+    transform: rotate(210deg);
+  }
+  .num7 div{
+    transform: rotate(-210deg);
+  }
+
+  .num8{
+    transform: rotate(240deg);
+  }
+  .num8 div{
+    transform: rotate(-240deg);
+  }
+
+  .num9{
+    transform: rotate(270deg);
+  }
+  .num9 div{
+    transform: rotate(-270deg);
+  }
+
+  .num10{
+    transform: rotate(300deg);
+  }
+  .num10 div{
+    transform: rotate(-300deg);
+  }
+
+  .num11{
+    transform: rotate(330deg);
+  }
+  .num11 div{
+    transform: rotate(-330deg);
+  }
+
+
+  .hours {
+    display: block;
+    width: 10px;
+    height: auto;
+    position: absolute;
+    bottom: 50%;
+    left: calc(50% - 5px);
+    transform-origin: center bottom;
+  }
+  .minutes {
+    display: block;
+    width: 10px;
+    height: auto;
+    position: absolute;
+    bottom: 50%;
+    left: calc(50% - 5px);
+    transform-origin: center bottom;
+    z-index: 1;
+  }
+  .seconds {
+    display: block;
+    width: 10px;
+    height: auto;
+    position: absolute;
+    bottom: 50%;
+    left: calc(50% - 5px);
+    transform-origin: center bottom;
+    z-index: 2;
+  }
+  /*nieużywany element
+  .center {
+    position: absolute;
+
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.637);
+      position: absolute;
+      bottom: calc(50% - 8px);
+      left: calc(50% - 8px);
+      z-index: 3;
+  }
+  */
+.date-box {
+  margin: 20px;
+  text-align: center;
 }
-.date {
+.date-box__date {
   font-size: 32px;
+}
+.date-box__text {
+  font-size: 12px;
+  margin: 0;
+
 }
 
 .footer {
   text-align: center;
-  bottom: 0;
   font-size: 12px;
+  margin: 20px 0 5px;
+}
+
+@media screen and (max-width: 350px) {
+  .main {
+    width: 250px
+  }
+  .header {
+    font-size: 35px;
+    margin: 20px;
+  }
+  .clockbase {
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+  }
+  .num {
+    width: 30px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 85px;
+    font-size: 20px;
+  }
+  .date-box__date {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-height: 737px) {
+  .header {
+    margin: 100px 20px 20px;
+  }
+  .date-box {
+    margin: 20px 20px 100px;
+  }
 }
