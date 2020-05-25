@@ -39,7 +39,7 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: solid 2px black;
+    border: solid 2px rgb(31, 31, 31);
     background-image: url("sketch-light-small.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -47,7 +47,8 @@ body {
     position: relative;
     display: block;
     flex-shrink: 0; 
-    margin: 20px;  
+    margin: 20px; 
+    box-shadow: 0 0 20px black; 
 }
   .num {
     display: block;

@@ -1,3 +1,5 @@
+// clock mechanism code from Hugh Dai, https://codepen.io/HughDai/pen/MKKXJp 
+
 const secondHand = document.querySelector('.seconds');
     const minsHand = document.querySelector('.minutes');
     const hourHand = document.querySelector('.hours');
