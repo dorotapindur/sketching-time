@@ -188,6 +188,11 @@ body {
   margin: 20px;
   text-align: center;
 }
+.footer {
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 0 5px;
+}
 .date-box__date {
   font-size: 40px;
 }
@@ -197,11 +202,7 @@ body {
 
 }
 
-.footer {
-  text-align: center;
-  font-size: 16px;
-  margin: 20px 0 5px;
-}
+
 
 @media screen and (max-width: 350px) {
   .main {
