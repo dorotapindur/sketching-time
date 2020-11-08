@@ -50,7 +50,7 @@ body {
     margin: 20px; 
     box-shadow: 0 0 20px black; 
 }
-  .num {
+  .number {
     display: block;
     width: 50px;
     height: 300px;
@@ -63,80 +63,80 @@ body {
     font-weight: normal;
     padding: 5px;
   }
-  .num1{
+  .number--one {
     transform: rotate(30deg);
   }
-  .num1 div{
+  .number--one div {
     transform: rotate(-30deg);
   }
 
-  .num2{
+  .number--two {
     transform: rotate(60deg);
   }
-  .num2 div{
+  .number--two div {
     transform: rotate(-60deg);
   }
 
-  .num3{
+  .number--three {
     transform: rotate(90deg);
   }
-  .num3 div{
+  .number--three div {
     transform: rotate(-90deg);
   }
 
-  .num4{
+  .number--four {
     transform: rotate(120deg);
   }
-  .num4 div{
+  .number--four div {
     transform: rotate(-120deg);
   }
 
-  .num5{
+  .number--five {
     transform: rotate(150deg);
   }
-  .num5 div{
+  .number--five div {
     transform: rotate(-150deg);
   }
 
-  .num6{
+  .number--six {
     transform: rotate(180deg);
   }
-  .num6 div{
+  .number--six div {
     transform: rotate(-180deg);
   }
 
-  .num7{
+  .number--seven {
     transform: rotate(210deg);
   }
-  .num7 div{
+  .number--seven div {
     transform: rotate(-210deg);
   }
 
-  .num8{
+  .number--eight{
     transform: rotate(240deg);
   }
-  .num8 div{
+  .number--eight div{
     transform: rotate(-240deg);
   }
 
-  .num9{
+  .number--nine {
     transform: rotate(270deg);
   }
-  .num9 div{
+  .number--nine div {
     transform: rotate(-270deg);
   }
 
-  .num10{
+  .number--ten {
     transform: rotate(300deg);
   }
-  .num10 div{
+  .number--ten div {
     transform: rotate(-300deg);
   }
 
-  .num11{
+  .number--eleven {
     transform: rotate(330deg);
   }
-  .num11 div{
+  .number--eleven div {
     transform: rotate(-330deg);
   }
 
@@ -170,20 +170,7 @@ body {
     transform-origin: center bottom;
     z-index: 2;
   }
-  /*nieużywany element
-  .center {
-    position: absolute;
-
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.637);
-      position: absolute;
-      bottom: calc(50% - 8px);
-      left: calc(50% - 8px);
-      z-index: 3;
-  }
-  */
+  
 .date-box {
   margin: 20px;
   text-align: center;
